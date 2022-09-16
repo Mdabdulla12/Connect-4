@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGrid" style="-fx-background-color: #daeefe;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.connect4.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="298" minWidth="225.0" prefWidth="225.0" />
+    </columnConstraints>
+    <rowConstraints>
+
+        <RowConstraints minHeight="10" prefHeight="30" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="33.0" prefWidth="376.0" GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiskPane" prefHeight="413.0" prefWidth="201.0" GridPane.rowIndex="1" />
+      <VBox prefHeight="450.0" prefWidth="225.0" style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Region prefHeight="29.0" prefWidth="195.0" />
+            <TextField fx:id="text1" alignment="CENTER" promptText="Player One Name" />
+             <Region prefHeight="5.0" prefWidth="195.0" />
+            <TextField fx:id="text2" alignment="CENTER" prefHeight="5.0" prefWidth="5.0" promptText="Player two Name" />
+            <Region prefHeight="9.0" prefWidth="195.0" />
+            <Button fx:id="setName" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="250.0" text="Set Names" />
+            <Region prefHeight="22.0" prefWidth="300.0" />
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="25.0" prefWidth="300.0" textFill="#f7f6f6">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Label>
+            <Region prefHeight="27.0" prefWidth="300.0" />
+            <Label alignment="CENTER" prefHeight="38.0" prefWidth="317.0" text="Turn" textFill="#f9f8f8">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+    </children>
+</GridPane>
